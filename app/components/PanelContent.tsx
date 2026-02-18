@@ -229,17 +229,7 @@ export default function PanelContent({ current, direction }: PanelContentProps) 
       <AnimatePresence mode="wait" custom={direction}>
         <motion.div
           key={current}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            padding: "60px 80px",
-          }}
+          className="panel-wrapper"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
